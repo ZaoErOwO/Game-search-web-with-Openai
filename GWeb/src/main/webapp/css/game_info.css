@@ -1,0 +1,441 @@
+/*=============== GOOGLE FONTS ===============*/
+@import
+	url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap")
+	;
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+	/*========== Colors ==========*/
+	/*Color mode HSL(hue, saturation, lightness)*/
+	--white-color: hsl(0, 0%, 100%);
+	--black-color: hsl(0, 0%, 0%);
+	/*========== Font and typography ==========*/
+	/*.5rem = 8px | 1rem = 16px ...*/
+	--body-font: "Poppins", sans-serif;
+	--h1-font-size: 1.75rem;
+	--normal-font-size: 1rem;
+	--small-font-size: .813rem;
+	/*========== Font weight ==========*/
+	--font-medium: 500;
+}
+
+/*=============== BASE ===============*/
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body, input, button {
+	font-size: var(--normal-font-size);
+	font-family: var(--body-font);
+}
+
+body {
+	color: var(--white-color);
+	background-image: url(../img/bj3.jpg);
+}
+
+input, button {
+	border: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+li {
+	list-style: none;
+}
+
+/*=============== LOGIN ===============*/
+.top {
+	width: 1400px;
+	height: 60px;
+	margin: 0 auto;
+}
+
+.back {
+	width: 200px;
+	height: 60px;
+	float: left;
+}
+
+.left_arrow {
+	width: 15px;
+	height: 15px;
+	border-top: 3px solid black;
+	border-right: 3px solid black;
+	transform: rotate(225deg);
+	float: left;
+	cursor: pointer;
+	margin-top: 22px;
+}
+
+.top p {
+	float: left;
+	color: black;
+	font-size: 20px;
+	line-height: 60px;
+}
+
+.box1 {
+	width: 1200px;
+	height: 40px;
+	margin: 0 auto;
+}
+
+.box1 p {
+	font-size: 24px;
+	line-height: 40px;
+	color: black;
+	float: left;
+}
+
+.box1 button {
+	width: 100px;
+	height: 40px;
+	float: right;
+	background-color: #32658b;
+	color: #85a8ce;
+	border-radius: 15px;
+}
+
+.box2 {
+	width: 1100px;
+	height: 430px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+/* Position the image container (needed to position the left and right arrows) */
+.container {
+	width: 650px;
+	height: 430px;
+	position: relative;
+	float: left;
+}
+
+/* Hide the images by default */
+.mySlides {
+	display: none;
+}
+
+/* Add a pointer when hovering over the thumbnail images */
+.cursor {
+	cursor: pointer;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+	cursor: pointer;
+	position: absolute;
+	top: 40%;
+	width: auto;
+	padding: 16px;
+	margin-top: -50px;
+	color: white;
+	font-weight: bold;
+	font-size: 20px;
+	border-radius: 0 3px 3px 0;
+	user-select: none;
+	-webkit-user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+	right: 0;
+	border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+	background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Number text (1/3 etc) */
+.numbertext {
+	color: #f2f2f2;
+	font-size: 12px;
+	padding: 8px 12px;
+	position: absolute;
+	top: 0;
+}
+
+/* Container for image text */
+.caption-container {
+	text-align: center;
+	background-color: #222;
+	padding: 2px 16px;
+	color: white;
+}
+
+.row:after {
+	content: "";
+	display: table;
+	clear: both;
+}
+
+/* Six columns side by side */
+.column {
+	float: left;
+	width: 16.66%;
+}
+
+/* Add a transparency effect for thumnbail images */
+.demo {
+	opacity: 0.6;
+}
+
+.active, .demo:hover {
+	opacity: 1;
+}
+
+.box2_right {
+	width: 350px;
+	height: 430px;
+	float: left;
+	margin-left: 100px;
+	background-color: rgba(0, 0, 0, 0.3);
+	border-radius: 15px;
+	overflow: hidden;
+}
+
+.box2_right_img {
+	width: 350px;
+	height: 180px;
+}
+
+.box2_right .box2_right_title {
+	width: 330px;
+	color: black;
+	font-size: 14px;
+	margin-left: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+.box2_txt {
+	width: 300px;
+	height: 18px;
+	margin-left: 10px;
+}
+
+.box2_txt .span1 {
+	font-size: 12px;
+	color: #ccc;
+	float: left;
+	line-height: 18px;
+}
+
+.box2_txt p {
+	float: left;
+	font-size: 12px;
+	color: #85A8CE;
+	line-height: 18px;
+	margin-left: 30px;
+}
+
+.box2_txt p span {
+	color: #ccc;
+}
+
+.box2_right button {
+	width: 100px;
+	height: 40px;
+	margin-top: 10px;
+	border-radius: 15px;
+	background-color: #698604;
+	color: white;
+	margin-left: 10px;
+	float: left;
+}
+
+.colle {
+	width: 40px;
+	float: left;
+	margin-top: 10px;
+}
+
+.search {
+	width: 300px;
+	height: 40px;
+	border: 1px black solid;
+	float: left;
+	margin-top: 10px;
+	border-radius: 20px;
+	overflow: hidden;
+}
+
+.search img {
+	width: 26px;
+	margin-top: 7px;
+	margin-left: 10px;
+	float: left;
+}
+
+.search input {
+	width: 250px;
+	height: 40px;
+	float: left;
+	padding-left: 10px;
+	background-color: rgba(0, 0, 0, 0);
+}
+
+.content {
+	width: 1100px;
+	height: 500px;
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.content_left {
+	width: 700px;
+	height: 500px;
+	float: left;
+	color: black;
+}
+
+.content_right {
+	width: 350px;
+	height: 900px;
+	float: left;
+	margin-left: 50px;
+	color: black;
+}
+
+.content_left_title {
+	font-size: 24px;
+}
+
+.comment {
+	width: 700px;
+	height: 200px;
+	background-color: rgba(62, 133, 174, 0.5);
+	border-radius: 15px;
+	margin-top: 10px;
+}
+
+.comment_top {
+	width: 700px;
+	height: 50px;
+}
+
+.comment_top img {
+	width: 45px;
+	height: 45px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.name_time {
+	float: left;
+	margin-top: 10px;
+	margin-left: 15px;
+}
+
+.name_time p {
+	line-height: 16px;
+}
+
+.name_time span {
+	font-size: 12px;
+	color: #ccc;
+}
+
+.comment_text {
+	width: 670px;
+	height: 140px;
+	margin-left: 15px;
+	margin-top: 20px;
+}
+
+.comment_text p {
+	width: 670px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	display: -webkit-box;
+	-webkit-line-clamp: 4;
+	-webkit-box-orient: vertical;
+}
+
+.content_right_title {
+	font-size: 24px;
+}
+
+.new {
+	width: 350px;
+	height: 260px;
+	background-color: rgba(0, 0, 0, 0.3);
+	margin-top: 10px;
+	border-radius: 15px;
+}
+
+.newname_time {
+	width: 350px;
+	height: 50px;
+}
+
+.newname_time p {
+	width: 300px;
+	padding-top: 10px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	margin-left: 25px;
+}
+
+.newname_time span {
+	font-size: 14px;
+	color: #ccc;
+	margin-left: 25px;
+}
+
+.new img {
+	width: 300px;
+	height: 180px;
+	margin-top: 10px;
+	margin-left: 25px;
+}
+
+.time {
+	width: 180px;
+	height: 60px;
+	float: left;
+	margin-left: 20px;
+}
+
+.time input {
+	width: 50px;
+	height: 30px;
+	border-radius: 10px;
+	background-color: #698604;
+	color: white;
+}
+
+.time p {
+	width: 100px;
+	height: 60px;
+	line-height: 60px;
+	float: left;
+}
+
+.btns input {
+	width: 50px;
+	height: 25px;
+	border-radius: 10px;
+	background-color: #698604;
+	color: white;
+	font-size: 14px;
+	line-height: 25px;
+}

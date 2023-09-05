@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE configuration
+PUBLIC "-//mybatis.org//DTD Config 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>	
+	<settings>
+		<setting name="jdbcTypeForNull" value="NULL" />
+	</settings>
+	<typeAliases>
+		<typeAlias alias="Comments" type="com.icss.entity.Comments" />
+		<typeAlias alias="Favorites" type="com.icss.entity.Favorites" />
+		<typeAlias alias="Game" type="com.icss.entity.Game" />
+		<typeAlias alias="News" type="com.icss.entity.News" />
+		<typeAlias alias="GameType" type="com.icss.entity.GameType" />
+		<typeAlias alias="User" type="com.icss.entity.User" />
+		
+	</typeAliases>	
+	<mappers>
+		<mapper resource="com/icss/mapper/gameMapper.xml"/>
+		<mapper resource="com/icss/mapper/userMapper.xml"/>
+		<mapper resource="com/icss/mapper/favoritesMapper.xml"/>
+		<mapper resource="com/icss/mapper/newsMapper.xml"/>
+	</mappers>
+</configuration>

@@ -1,0 +1,221 @@
+/*=============== GOOGLE FONTS ===============*/
+@import
+	url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap")
+	;
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+	/*========== Colors ==========*/
+	/*Color mode HSL(hue, saturation, lightness)*/
+	--white-color: hsl(0, 0%, 100%);
+	--black-color: hsl(0, 0%, 0%);
+	/*========== Font and typography ==========*/
+	/*.5rem = 8px | 1rem = 16px ...*/
+	--body-font: "Poppins", sans-serif;
+	--h1-font-size: 1.75rem;
+	--normal-font-size: 1rem;
+	--small-font-size: .813rem;
+	/*========== Font weight ==========*/
+	--font-medium: 500;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	background: url(../img/bg.jpg) no-repeat center top;
+	background-size: cover;
+	background-attachment: fixed;
+}
+
+a {
+	color: white;
+}
+
+body, input, button {
+	font-size: var(--normal-font-size);
+	font-family: var(--body-font);
+}
+
+body {
+	color: var(--white-color);
+}
+
+input, button {
+	border: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+li {
+	list-style: none;
+}
+
+.nav {
+	width: 100%;
+	height: 50px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.nav ul {
+	float: left;
+}
+
+.nav ul li {
+	float: left;
+	color: white;
+	width: 120px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.nav ul li a {
+	color: #ccc;
+}
+
+.nav a:hover {
+	color: white;
+}
+
+.login_btn {
+	width: 120px;
+	height: 50px;
+	float: right;
+	text-align: center;
+}
+
+.login_btn a {
+	line-height: 50px;
+	color: #ccc;
+}
+
+.user_info {
+	width: 160px;
+	height: 50px;
+	float: right;
+}
+
+.user_info .a1 {
+	float: left;
+	line-height: 50px;
+	color: #ccc;
+	margin-left: 10px;
+}
+
+.user_info .a1:hover {
+	color: white;
+}
+
+.tx_img {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.user_info img {
+	width: 30px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.box {
+	width: 100%;
+	height: 700px;
+}
+
+.menu {
+	width: 90%;
+	height: 300px;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin: 0 auto;
+	margin-top: 20px;
+}
+
+.menu ul {
+	width: 90%;
+	height: 30px;
+	margin: 0 auto;
+	line-height: 30px;
+}
+
+.menu ul li {
+	float: left;
+	font-size: 15px;
+	font-family: '宋体';
+	margin-left: 25px;
+}
+
+.menu1 {
+	width: 90%;
+	height: auto;
+	display: flex;
+	margin: 0 auto;
+	padding-top: 20px;
+}
+
+.menu1 label {
+	width: 150px;
+}
+
+.game-list {
+	width: 90%;
+	height: auto;
+	background-color: rgba(255, 255, 255, 0.3);
+	margin: 0 auto;
+	margin-top: 20px;
+	overflow: hidden;
+}
+
+.game-list ul li {
+	width: 24%;
+	height: 350px;
+	border: 1px solid black;
+	float: left;
+	margin-left: 0.8%;
+	margin-top: 20px;
+	background-color: white;
+	position: relative;
+}
+
+.game-list ul li img {
+	width: 100%;
+	height: 150px;
+}
+
+.type {
+	width: 100%;
+	height: 30px;
+	margin-top: 10px;
+	display: flex;
+}
+
+.qita {
+	width: 100%;
+	height: 30px;
+	position: absolute;
+	bottom: 0;
+	border-top: 1px solid #999;
+}
+
+svg {
+	color: black;
+	margin-top: 7px;
+}
+.user_info .a2 {
+	float: left;
+	line-height: 50px;
+	color: #ccc;
+	margin-left: 10px;
+	margin-top: 2px;
+}

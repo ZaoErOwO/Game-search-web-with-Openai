@@ -1,0 +1,35 @@
+<!DOCTYPE mapper
+PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+"http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.icss.mapper.IFavoritesMapper">
+
+
+	<select id="getAllFavorites" resultType="Favorites">
+	    select * from favorites f,game g where f.gname=g.gname and f.uname=#{uname}
+	</select>
+	
+	<select id="getFavoriteModel" resultType="Favorites">
+	    select * from favorites where gname=#{gname} and uname=#{uname}
+	</select>
+	
+	<insert id="colletion" parameterType="Favorites">
+	   insert into favorites(uname,gname,fdate) values(#{favorites.uname},#{favorites.gname},#{favorites.fdate})
+	</insert>
+	
+	<delete id="removecollection" >
+		delete from favorites where uname=#{uname} and gname=#{gname}
+	
+	</delete>
+
+
+
+
+
+
+
+</mapper>
+
+
+
+

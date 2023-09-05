@@ -1,0 +1,258 @@
+/*=============== GOOGLE FONTS ===============*/
+@import
+	url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap")
+	;
+
+/*=============== VARIABLES CSS ===============*/
+:root {
+	/*========== Colors ==========*/
+	/*Color mode HSL(hue, saturation, lightness)*/
+	--white-color: hsl(0, 0%, 100%);
+	--black-color: hsl(0, 0%, 0%);
+	/*========== Font and typography ==========*/
+	/*.5rem = 8px | 1rem = 16px ...*/
+	--body-font: "Poppins", sans-serif;
+	--h1-font-size: 1.75rem;
+	--normal-font-size: 1rem;
+	--small-font-size: .813rem;
+	/*========== Font weight ==========*/
+	--font-medium: 500;
+}
+
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+body, input, button {
+	font-size: var(--normal-font-size);
+	font-family: var(--body-font);
+}
+
+body {
+	color: var(--white-color);
+}
+
+input, button {
+	border: none;
+	outline: none;
+}
+
+a {
+	text-decoration: none;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+li {
+	list-style: none;
+}
+
+.wrap {
+	background-image: url(../img/bg.png);
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	position: fixed;
+	width: 100%;
+	height: 100%;
+}
+
+.nav {
+	position: absolute;
+	width: 100%;
+	height: 50px;
+	background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.nav ul {
+	float: left;
+}
+
+.nav ul li {
+	float: left;
+	color: white;
+	width: 120px;
+	text-align: center;
+	line-height: 50px;
+}
+
+.tx_img {
+	border-radius: 50%;
+	overflow: hidden;
+}
+
+.nav ul li a {
+	color: #ccc;
+}
+
+.nav a:hover {
+	color: white;
+}
+
+.login_btn {
+	width: 120px;
+	height: 50px;
+	float: right;
+	text-align: center;
+}
+
+.login_btn a {
+	line-height: 50px;
+	color: #ccc;
+}
+
+.user_info {
+	width: 160px;
+	height: 50px;
+	float: right;
+}
+
+.user_info .a1 {
+	float: left;
+	line-height: 50px;
+	color: #ccc;
+	margin-left: 10px;
+}
+
+.user_info .a1:hover {
+	color: white;
+}
+
+.user_info img {
+	width: 30px;
+	float: left;
+	margin-top: 10px;
+	margin-left: 10px;
+}
+
+.search {
+	width: 800px;
+	height: 60px;
+	position: absolute;
+	top: 150px;
+	left: 24%;
+	border-radius: 30px;
+	z-index: 10;
+	background-color: white;
+	overflow: hidden;
+}
+
+.search img {
+	float: left;
+	width: 24px;
+	margin-top: 18px;
+	margin-left: 24px;
+}
+
+.search input {
+	float: left;
+	border: 0;
+	width: 740px;
+	height: 60px;
+	padding-left: 10px;
+	font-size: 17px;
+	outline: none;
+}
+
+.content {
+	position: absolute;
+	width: 940px;
+	height: 150px;
+	bottom: 30px;
+	left: 19.5%;
+}
+
+.left_arrow {
+	width: 25px;
+	height: 25px;
+	border-top: 3px solid #ccc;
+	border-right: 3px solid #ccc;
+	transform: rotate(225deg);
+	float: left;
+	margin-top: 62px;
+	cursor: pointer;
+}
+
+.left_arrow:hover {
+	width: 25px;
+	height: 25px;
+	border-top: 3px solid white;
+	border-right: 3px solid white;
+	transform: rotate(225deg);
+	float: left;
+	margin-top: 62px;
+}
+
+.right_arrow {
+	width: 25px;
+	height: 25px;
+	border-top: 3px solid #ccc;
+	border-right: 3px solid #ccc;
+	transform: rotate(45deg);
+	float: right;
+	margin-top: 62px;
+	cursor: pointer;
+}
+
+.right_arrow:hover {
+	width: 25px;
+	height: 25px;
+	border-top: 3px solid white;
+	border-right: 3px solid white;
+	transform: rotate(45deg);
+	float: right;
+	margin-top: 62px;
+}
+
+.content_main1 {
+	width: 880px;
+	height: 150px;
+	float: left;
+	display: block;
+}
+
+.content_main2 {
+	width: 880px;
+	height: 150px;
+	float: left;
+	display: none;
+}
+
+.main {
+	width: 200px;
+	height: 150px;
+	background-color: #242522;
+	border-radius: 10px;
+	overflow: hidden;
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+.main p {
+	width: 180px;
+	height: 30px;
+	color: white;
+	text-align: center;
+	line-height: 30px;
+	margin:0 auto;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.main img {
+	width: 200px;
+	height: 120px;
+}
+.user_info .a2 {
+	float: left;
+	line-height: 50px;
+	color: #ccc;
+	margin-left: 10px;
+	margin-top: 2px;
+}
