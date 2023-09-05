@@ -14,7 +14,7 @@ import okhttp3.Response;
 
 @Service
 public class OpenAiService {
-    private static final String OPENAI_API_KEY = "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";
+    private static final String OPENAI_API_KEY = "";
     private static final String OPENAI_URL = "https://api.openai.com/v1/completions";
 
     public String getGameName(String prompt) throws IOException {
